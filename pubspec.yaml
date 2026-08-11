@@ -1,0 +1,59 @@
+name: bagi_tagihan
+description: "Aplikasi Pembagi Tagihan Otomatis - Skripsi Daud Aldo Santoso"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  http_parser: ^4.0.2
+  web_socket_channel: ^2.4.0
+  flutter_native_splash: ^2.3.10
+
+  flutter:
+    sdk: flutter
+
+  provider: ^6.1.1
+  http: ^1.1.0
+  image_picker: ^1.0.7
+  shared_preferences: ^2.2.2
+  share_plus: ^13.1.0
+  url_launcher: ^6.2.1
+  intl: ^0.20.2
+  cupertino_icons: ^1.0.2
+  qr_flutter: ^4.1.0
+  qr_code_scanner_plus: ^2.0.10+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/
+    - assets/icon/
+    - assets/splash/
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/splash/logo.png
+  android: true
+  ios: true
+  android_12:
+    color: "#FFFFFF"
+    image: assets/splash/logo.png
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/logo.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icon/logo.png"
+  web:
+    generate: false
