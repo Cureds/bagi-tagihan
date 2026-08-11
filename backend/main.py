@@ -10,8 +10,8 @@ from typing import Optional
 
 load_dotenv()
 
-UPSTASH_URL   = os.getenv("UPSTASH_REDIS_REST_URL",   "https://square-squid-142339.upstash.io")
-UPSTASH_TOKEN = os.getenv("UPSTASH_REDIS_REST_TOKEN", "gQAAAAAAAiwDAAIgcDI2ODRhM2ZhYTgyMmY0NGZkODZjYWY4YjkwYmQ4YjhiZA")
+UPSTASH_URL   = os.getenv("UPSTASH_REDIS_REST_URL")
+UPSTASH_TOKEN = os.getenv("UPSTASH_REDIS_REST_TOKEN")
 
 PARSER_REPO   = os.getenv("PARSER_REPO", "pipluptine/bagi-tagihan-parser")
 PARSER_PREFIX = "ekstrak nota: "
